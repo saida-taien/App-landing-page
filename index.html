@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+
+    <style>
+        .font-poppins
+        {
+            font-family:  "Poppins", sans-serif;
+        }
+    </style>
+
     <title>App Landing</title>
 </head>
-<body >
+<body class="font-poppins">
 
     <header class="md:container md:mx-auto">
         <nav class="bg-[#172554] px-11 lg:px-48 py-5 flex justify-start items-center gap-7">
@@ -132,6 +145,41 @@
 
         </section>
     </main>
+
+    <footer class="footer p-10 bg-[#172554] text-base-content text-white ">
+        <nav>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Legal</header> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav> 
+        <form>
+          <header class="footer-title">Newsletter</header> 
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label> 
+            <div class="join">
+              <input type="text" placeholder="username@site.com" class="input input-bordered join-item" /> 
+              <button class="btn btn-primary join-item">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
     
 </body>
 </html>
